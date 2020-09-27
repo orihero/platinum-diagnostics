@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import { FaFax, FaEnvelope } from 'react-icons/fa'
 import { MdPhone, MdLocationOn } from 'react-icons/md'
@@ -7,7 +8,7 @@ import logo from '../../assets/images/logo-footer.jpg'
 
 import styles from './index.module.scss'
 
-const Footer = () => {
+const Footer = ({ current }) => {
 
     return(
         <div className={styles.footerCont}>
@@ -41,42 +42,78 @@ const Footer = () => {
                 </div>
                 <div className={styles.col2}>
                     <h5>NAVIGATION LINKS</h5>
-                    <div className={styles.col2Item}>
+                    <Link
+                        to='/'
+                        className={`${styles.col2Item} ${current === 'home' ? styles.current : ''}`}
+                    >
                         Home
-                    </div>
-                    <div className={styles.col2Item}>
+                    </Link>
+                    <Link
+                        to='/about'
+                        className={`${styles.col2Item} ${current === 'about' ? styles.current : ''}`}
+                    >
                         About Us
-                    </div>
-                    <div className={styles.col2Item}>
+                    </Link>
+                    <Link
+                        to='/how-it-works'
+                        className={`${styles.col2Item} ${current === 'how-it-works' ? styles.current : ''}`}
+                    >
                         How it Works
-                    </div>
-                    <div className={styles.col2Item}>
+                    </Link>
+                    <Link
+                        to='/lab-test'
+                        className={`${styles.col2Item} ${current === 'lab-test' ? styles.current : ''}`}
+                    >
                         Lab Test by State
-                    </div>
-                    <div className={styles.col2Item}>
+                    </Link>
+                    <Link
+                        to='/test-pricing'
+                        className={`${styles.col2Item} ${current === 'test-pricing' ? styles.current : ''}`}
+                    >
                         Test & Pricing
-                    </div>
-                    <div className={styles.col2Item}>
+                    </Link>
+                    <Link
+                        to='/find-location'
+                        className={`${styles.col2Item} ${current === 'find-location' ? styles.current : ''}`}
+                    >
                         Locations
-                    </div>
-                    <div className={styles.col2Item}>
+                    </Link>
+                    <Link
+                        to='/contact'
+                        className={`${styles.col2Item} ${current === 'contact' ? styles.current : ''}`}
+                    >
                         Contact Information
-                    </div>
-                    <div className={styles.col2Item}>
+                    </Link>
+                    <Link
+                        to='/faq'
+                        className={`${styles.col2Item} ${current === 'faq' ? styles.current : ''}`}
+                    >
                         FAQ’s
-                    </div>
-                    <div className={styles.col2Item}>
+                    </Link>
+                    <Link
+                        to='/news-list'
+                        className={`${styles.col2Item} ${current === 'news' ? styles.current : ''}`}
+                    >
                         News
-                    </div>
-                    <div className={styles.col2Item}>
+                    </Link>
+                    <Link
+                        to='/privacy-policy'
+                        className={`${styles.col2Item} ${current === 'privacy-policy' ? styles.current : ''}`}
+                    >
                         Privacy Policy
-                    </div>
-                    <div className={styles.col2Item}>
+                    </Link>
+                    <Link
+                        to='/terms-conditions'
+                        className={`${styles.col2Item} ${current === 'terms-conditions' ? styles.current : ''}`}
+                    >
                         Terms & Conditions
-                    </div>
-                    <div className={styles.col2Item}>
+                    </Link>
+                    <Link
+                        to='/disclaimer'
+                        className={`${styles.col2Item} ${current === 'disclaimer' ? styles.current : ''}`}
+                    >
                         Disclaimer
-                    </div>
+                    </Link>
                 </div>
                 <div className={styles.col3}>
                     <h5>POPULAR TESTS</h5>

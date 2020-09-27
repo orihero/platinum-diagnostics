@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import { IoMdArrowDropright } from 'react-icons/io'
 
@@ -9,48 +10,48 @@ const SideMenu = () => {
     return(
         <div className={styles.cont}>
             <h4>CLINICIAN PROVIDERS</h4>
-            <div className={styles.menuItem}>
+            <Link to='/create-account' className={styles.menuItem}>
                 <IoMdArrowDropright className={styles.arrowIcon} />
                 <div className={styles.subItem}>
                     Create an account
                 </div>
-            </div>
-            <div className={styles.menuItem}>
+            </Link>
+            <Link to='/physician-services' className={styles.menuItem}>
                 <IoMdArrowDropright className={styles.arrowIcon} />
                 <div className={styles.subItem}>
                     Physician services
                 </div>
-            </div>
-            <div className={styles.menuItem}>
+            </Link>
+            <Link to='/insurances' className={styles.menuItem}>
                 <IoMdArrowDropright className={styles.arrowIcon} />
                 <div className={styles.subItem}>
                     Insurances
                 </div>
-            </div>
-            <div className={styles.menuItem}>
+            </Link>
+            <Link to='/lab-forms' className={styles.menuItem}>
                 <IoMdArrowDropright className={styles.arrowIcon} />
                 <div className={styles.subItem}>
                     Lab Forms
                 </div>
-            </div>
-            <div className={styles.menuItem}>
+            </Link>
+            <Link to='/specimen-collection' className={styles.menuItem}>
                 <IoMdArrowDropright className={styles.arrowIcon} />
                 <div className={styles.subItem}>
                     Specimen Collection
                 </div>
-            </div>
-            <div className={styles.menuItem}>
+            </Link>
+            <Link to='/shipping-and-handling' className={styles.menuItem}>
                 <IoMdArrowDropright className={styles.arrowIcon} />
                 <div className={styles.subItem}>
                     Shipping and handling
                 </div>
-            </div>
-            <div className={styles.menuItem}>
+            </Link>
+            <Link to='/order-supplies' className={styles.menuItem}>
                 <IoMdArrowDropright className={styles.arrowIcon} />
                 <div className={styles.subItem}>
                     Order supplies
                 </div>
-            </div>
+            </Link>
         </div>
     )
 }

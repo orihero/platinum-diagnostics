@@ -28,6 +28,7 @@
         padding: 10px 0px;
         padding-left: 15px;
         align-items: center;
+        text-decoration: none;
         border-bottom: 1px dotted #999;
         background: -o-linear-gradient(top, #e5f4f8 0%,#ffffff 47%,#ffffff 100%);
         background: -ms-linear-gradient(top, #e5f4f8 0%,#ffffff 47%,#ffffff 100%);
@@ -44,10 +45,10 @@
         }
 
         .subItem{
-            color: #466c85;
             font-size: 1.05em;
             margin-left: 15px;
             text-transform: capitalize;
+            color: #466c85 !important;
         }
 
         .arrowIcon{

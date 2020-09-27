@@ -39,9 +39,17 @@
             }
 
             .col2Item{
+                display: block;
+                text-decoration: none;
                 font-size: 14px;
                 margin-top: 10px;
                 color: #83d5ff;
+
+                &:hover{
+                    color: #fff;
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
             }
         }
     
@@ -69,5 +77,9 @@
         margin-top: 60px;
         text-align: center;
         padding-bottom: 25px;
+    }
+
+    .current{
+        color: #fff !important;
     }
 }
