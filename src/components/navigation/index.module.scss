@@ -1,0 +1,18 @@
+.navigation{
+    display: flex;
+    color: #fff;
+    padding: 0px 120px;
+    background-color: #FF9000;
+
+    .item{
+        color: #fff;
+        font-size: 1.5em;
+        padding: 20px 30px;
+        text-decoration: none;
+        
+        &:hover{
+            cursor: pointer;
+            background-color: #F05927;
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.header{
+    display: flex;
+    padding: 0px 105px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+
+    .left{
+        cursor: pointer;
+    }
+
+    .right{
+
+        .row1{
+            display: flex;
+            width: max-content;
+            float: right;
+            margin-bottom: 20px;
+            align-items: center;
+
+            .icon{
+                width: 20px;
+                height: 18px;
+                color: #888;
+            }
+
+            p{
+                margin: 0;
+                color: #2298B6;
+                margin-left: 10px;
+            }
+
+            &:hover{
+                cursor: pointer;
+
+                p{
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .row2{
+            clear: both;
+            display: flex;
+            align-items: center;
+
+            .col1{
+
+                .iconFb{
+                    width: 35px;
+                    height: 35px;
+                    color: #446DAB;
+                }
+
+                .iconTw{
+                    width: 35px;
+                    height: 35px;
+                    margin-left: 10px;
+                    color: #0597CB;
+                }
+
+                .iconYt{
+                    width: 35px;
+                    height: 35px;
+                    margin-left: 10px;
+                    color: #E22014;
+                }
+
+                .iconGp{
+                    width: 35px;
+                    height: 35px;
+                    margin-left: 10px;
+                    color: #343434;
+                }
+            }
+
+            .col2{
+                display: flex;
+                margin-left: 25px;
+                align-items: center;
+
+                .coll1{
+                    padding: 5px 15px;
+                    background-color: #CEEBF0;
+                    border-top-left-radius: 15px;
+                    border-bottom-left-radius: 15px;
+
+                    .icon{
+                        width: 25px;
+                        height: 30px;
+                        color: #2299B7;
+                    }
+                }
+
+                .coll2{
+                    color: #fff;
+                    padding: 10px;
+                    display: flex;
+                    font-size: 1.2em;
+                    font-weight: 400;
+                    padding-top: 8px;
+                    padding-right: 30px;
+                    align-items: center;
+                    background-color: #2299B7;
+                    border-top-right-radius: 25px;
+                    border-bottom-right-radius: 25px;
+                }
+
+                &:hover{
+                    cursor: pointer;
+                    
+                    .coll2{
+                        background-color: #086f89;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,174 @@
+.cont{
+    padding-top: 85px;
+
+    .content{
+        padding: 30px 65px 0px 65px;
+        display: flex;
+        background-color: #fff;
+
+        .main{
+            width: 50%;
+            margin-left: 25px;
+            padding-bottom: 50px;
+
+            .header{
+
+                .headerText1{
+                    font-size: 32px;
+                    font-weight: 500;
+                    padding-bottom: 15px;
+                    border-bottom: 1px solid #eee;
+                }
+
+                .headerText2{
+                    color: #555;
+                    font-size: 14px;
+                    margin-top: 15px;
+                    line-height: 150%;
+                }
+
+                img{
+                    width: calc(100% - 40px);
+                    margin-top: 50px;
+                    margin-left: 5px;
+                    margin-right: 20px;
+                }
+            }
+
+            .box1{
+                padding-top: 30px;
+                padding-bottom: 55px;
+                border-bottom: 1px solid #eee;
+
+                .boldText{
+                    font-size: 24px;
+                    color: #466C86;
+                    font-weight: bold;
+                    line-height: 130%;
+                }
+
+                .catalog1{
+
+                    .text{
+                        color: #555;
+                        font-size: 14px;
+                        margin-top: 10px;
+                        font-weight: bold;
+                        line-height: 150%;
+                    }
+
+                    ul{
+                        list-style: none;
+                        padding-bottom: 20px;
+
+                        li{
+                            display: flex;
+                            margin-top: 20px;
+                            padding-left: 20px;
+                            align-items: center;
+
+                            .icon{
+                                width: 4px;
+                                height: 4px;
+                                color: #555;
+                            }
+
+                            span{
+                                color: #555;
+                                font-size: 14px;
+                                font-weight: bold;
+                                line-height: 150%;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .catalog2{
+
+                    .text{
+                        color: #555;
+                        font-size: 14px;
+                        font-weight: bold;
+                        line-height: 150%;
+                    }
+
+                    ul{
+                        list-style: none;
+
+                        li{
+                            color: #555;
+                            font-size: 14px;
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+
+            .box2{
+                padding-top: 25px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #eee;
+
+                .boldText{
+                    font-size: 24px;
+                    color: #466C86;
+                    font-weight: bold;
+                    line-height: 130%;
+                }
+
+                .text{
+                    color: #555;
+                    margin-top: 15px;
+                    font-size: 14px;
+                    line-height: 150%;
+                }
+            }
+
+            .box3{
+                padding-top: 20px;
+
+                .headerRow{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .boldText{
+                        width: 50%;
+                        font-size: 24px;
+                        color: #466C86;
+                        font-weight: bold;
+                        line-height: 130%;
+                    }
+                }
+
+                ul{
+                    margin-top: 70px;
+                    list-style: none;
+                    padding-left: 25px;
+
+                    li{
+                        display: flex;
+                        margin-top: 20px;
+                        justify-content: space-between;
+
+                        .iconn{
+                            width: 6px;
+                            height: 6px;
+                            margin-top: 5px;
+                            border-radius: 50%;
+                            background-color: #555;
+                        }
+
+                        .liText{
+                            width: 97%;
+                            color: #555;
+                            font-size: 14px;
+                            line-height: 150%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
