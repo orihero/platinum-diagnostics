@@ -1,5 +1,5 @@
 .cont{
-    padding-top: 85px;
+    padding-top: 30px;
 
     .content{
         padding: 30px 65px 0px 65px;
@@ -12,19 +12,77 @@
             margin-right: 30px;
             padding-bottom: 50px;
 
-            .title{
+            h1{
                 color: #000;
                 font-size: 36px;
+                font-weight: 400;
                 line-height: 130%;
-                padding-bottom: 15px;
+                padding-bottom: 10px;
                 border-bottom: #EEE thin solid;
             }
 
-            .text{
-                color: #555;
-                font-size: 14px;
-                margin-top: 15px;
-                line-height: 150%;
+            .box{
+                margin-top: 20px;
+
+                h2{
+                    padding: 0;
+                    border: none;
+                    font-size: 24px;
+                    font-weight: 400;
+                    color: #466C86;
+                    line-height: 130%;
+                }
+
+                p{
+                    color: #555;
+                    font-size: 14px;
+                    margin-top: 10px;
+                    line-height: 150%;
+                }
+
+                h3{
+                    font-family: 'Open Sans' sans-serif;
+                    font-size: 18px;
+                    font-weight: 400;
+                    margin-top: 30px;
+                    line-height: 130%;
+                }
+
+                .flexBox{
+                    display: flex;
+                    padding-top: 10px;
+                    // background-color: aqua;
+
+                    .col{
+                        width: 35%;
+                        margin-left: 25px;
+
+                        .item{
+                            display: flex;
+                            margin-top: 10px;
+                            align-items: center;
+
+                            .itemIcon{
+                                width: 4px;
+                                height: 4px;
+                                border-radius: 50%;
+                                background-color: #555;
+                            }
+
+                            .itemText{
+                                color: #555;
+                                font-size: 14px;
+                                margin-left: 10px;
+                                line-height: 150%;
+                            }
+                        }
+                    }
+                }
+            
+                img{
+                    width: 100%;
+                    margin: 20px 0px;
+                }
             }
         }
     }

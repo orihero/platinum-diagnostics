@@ -1,8 +1,8 @@
 .cont{
-    padding-top: 85px;
+    padding-top: 30px;
 
     .content{
-        padding: 30px 65px 0px 65px;
+        padding: 30px 65px 70px 65px;
         display: flex;
         background-color: #fff;
 
@@ -10,20 +10,33 @@
             width: 50%;
             margin-left: 25px;
             margin-right: 30px;
-            padding-bottom: 50px;
 
-            .title{
+            h1{
                 color: #000;
                 font-size: 36px;
+                font-weight: 400;
                 line-height: 130%;
                 padding-bottom: 15px;
                 border-bottom: #EEE thin solid;
             }
 
+            .box{
+                padding-top: 10px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #eee;
+
+                p{
+                    color: #555;
+                    font-size: 14px;
+                    margin-top: 10px;
+                    line-height: 150%;
+                }
+            }
+
             .text{
                 color: #555;
                 font-size: 14px;
-                margin-top: 15px;
+                margin-top: 20px;
                 line-height: 150%;
             }
         }

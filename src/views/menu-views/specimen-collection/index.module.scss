@@ -1,5 +1,5 @@
 .cont{
-    padding-top: 85px;
+    padding-top: 30px;
 
     .content{
         padding: 30px 65px 0px 65px;
@@ -12,19 +12,95 @@
             margin-right: 30px;
             padding-bottom: 50px;
 
-            .title{
+            h1{
                 color: #000;
                 font-size: 36px;
+                font-weight: 400;
                 line-height: 130%;
                 padding-bottom: 15px;
                 border-bottom: #EEE thin solid;
             }
 
-            .text{
-                color: #555;
-                font-size: 14px;
-                margin-top: 15px;
-                line-height: 150%;
+            .textBox{
+                padding: 20px 0px;
+
+                h2{
+                    font-size: 24px;
+                    color: #466c86;
+                    font-weight: bold;
+                    line-height: 130%;
+                }
+
+                p{
+                    margin: 0;
+                    padding: 0;
+                    color: #555;
+                    font-size: 14px;
+                    margin-top: 10px;
+                    line-height: 150%;
+                }
+            }
+
+            img{
+                width: 100%;
+            }
+
+            .listBox{
+                margin-top: 20px;
+
+                h3{
+                    font-size: 24px;
+                    color: #466C86;
+                    line-height: 130%;
+                }
+
+                .listItem{
+                    display: flex;
+                    margin-top: 10px;
+                    margin-left: 25px;
+
+                    .listItemIcon{
+                        width: 4px;
+                        height: 4px;
+                        border-radius: 50%;
+                        margin-top: 10px;
+                        background-color: #555;
+                    }
+
+                    .listItemTextbox{
+                        width: 97%;
+                        margin-left: 10px;
+
+                        p{
+                            color: #555;
+                            font-size: 14px;
+                            line-height: 150%;
+
+                            b{
+                                margin-right: 5px;
+                            }
+                        }
+
+                        .subItem{
+                            display: flex;
+                            margin-top: 10px;
+                            margin-left: 25px;
+
+                            .subItemIcon{
+                                width: 4px;
+                                height: 4px;
+                                margin-top: 10px;
+                                border-radius: 50%;
+                                border: 1px solid #555;
+                            }
+
+                            .subItemText{
+                                width: 97%;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

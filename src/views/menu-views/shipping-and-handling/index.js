@@ -18,11 +18,22 @@ const ShippingAndHandling = () => {
             <div className={styles.content}>
                 <SideMenu />
                 <div className={styles.main}>
-                    <div className={styles.title}>
+                    <h1>
                         Shipping and Handling
+                    </h1>
+                    <div className={styles.box}>
+                        <p>
+                            To coordinate with your practice’s needs, Platinum Diagnostic Lab uses an advanced information system to schedule and track specimen pickup and delivery, accommodating virtually any pickup time based on your availability and convenience.
+                        </p>
+                        <p>
+                            For urgent testing needs, Platinum Diagnostic Lab offers special pickups.
+                        </p>
+                        <p>
+                            No additional payment is required for shipping and handling. Laboratory test costs include pickup, delivery and handling.
+                        </p>
                     </div>
                     <div className={styles.text}>
-                        Page under Construction
+                        For your convenience and to insure the integrity of collected specimens, Platinum Diagnostic Lab operates its own delivery system in New Jersey. Platinum Diagnostic Lab is contracted with an independent courier company. FedEx is occasionally used to ship lab test orders.
                     </div>
                 </div>
             </div>
