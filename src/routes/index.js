@@ -31,7 +31,17 @@ import {
 	LabForms,
 	SpecimenCollection,
 	ShippingAndHandling,
-	OrderSupplies
+	OrderSupplies,
+
+	// Disease
+	Allergy,
+	InfectiousDeseases,
+	Diabets,
+	GeneralHealth,
+	PainManagement,
+	Pediatrics,
+	Oncology,
+	Cardiovascular,
 } from '../views'
 
 const AppRouter = () => {
@@ -106,6 +116,32 @@ const AppRouter = () => {
 				</Route>
 				<Route path='/order-supplies' exact>
 					<OrderSupplies />
+				</Route>
+
+				{/* Disease */}
+				<Route path='/allergy' exact>
+					<Allergy />
+				</Route>
+				<Route path='/infectioues-deseases' exact>
+					<InfectiousDeseases />
+				</Route>
+				<Route path='/diabets' exact>
+					<Diabets />
+				</Route>
+				<Route path='/general-health' exact>
+					<GeneralHealth />
+				</Route>
+				<Route path='/pain-management' exact>
+					<PainManagement />
+				</Route>
+				<Route path='/pediatrics' exact>
+					<Pediatrics />
+				</Route>
+				<Route path='/oncology' exact>
+					<Oncology />
+				</Route>
+				<Route path='/cardiovascular' exact>
+					<Cardiovascular />
 				</Route>
 			</Switch>
 		</Router>

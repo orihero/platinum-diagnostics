@@ -64,9 +64,17 @@
             }
 
             .col3Item{
+                display: block;
                 font-size: 14px;
                 margin-top: 10px;
                 color: #83d5ff;
+                text-decoration: none;
+
+                &:hover{
+                    cursor: pointer;
+                    color: #fff !important;
+                    text-decoration: underline;
+                }
             }
         }
     }

@@ -22,6 +22,15 @@ import SpecimenCollection from './menu-views/specimen-collection'
 import ShippingAndHandling from './menu-views/shipping-and-handling'
 import OrderSupplies from './menu-views/order-supplies'
 
+import Allergy from './disease-views/allergy'
+import InfectiousDeseases from './disease-views/infectious-deseases'
+import Diabets from './disease-views/diabetes'
+import GeneralHealth from './disease-views/general-health'
+import PainManagement from './disease-views/pain-management'
+import Pediatrics from './disease-views/pediatrics'
+import Oncology from './disease-views/oncology'
+import Cardiovascular from './disease-views/cardiovascular'
+
 export {
     // Main
     Home,
@@ -49,4 +58,14 @@ export {
     SpecimenCollection,
     ShippingAndHandling,
     OrderSupplies,
+
+    // Disease
+    Allergy,
+    InfectiousDeseases,
+    Diabets,
+    GeneralHealth,
+    PainManagement,
+    Pediatrics,
+    Oncology,
+    Cardiovascular
 }

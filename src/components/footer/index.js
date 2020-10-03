@@ -117,30 +117,30 @@ const Footer = ({ current }) => {
                 </div>
                 <div className={styles.col3}>
                     <h5>POPULAR TESTS</h5>
-                    <div className={styles.col3Item}>
+                    <Link to='/allergy' className={styles.col3Item}>
                         Allergy
-                    </div>
-                    <div className={styles.col3Item}>
+                    </Link>
+                    <Link to='/infectioues-deseases' className={styles.col3Item}>
                         Drug Screen 10 Panel
-                    </div>
-                    <div className={styles.col3Item}>
+                    </Link>
+                    <Link to='/diabets' className={styles.col3Item}>
                         CPW
-                    </div>
-                    <div className={styles.col3Item}>
+                    </Link>
+                    <Link to='/general-health' className={styles.col3Item}>
                         Lipid Profile
-                    </div>
-                    <div className={styles.col3Item}>
+                    </Link>
+                    <Link to='/pain-management' className={styles.col3Item}>
                         Vitamin D
-                    </div>
-                    <div className={styles.col3Item}>
+                    </Link>
+                    <Link to='/pediatrics' className={styles.col3Item}>
                         PSA
-                    </div>
-                    <div className={styles.col3Item}>
+                    </Link>
+                    <Link to='/oncology' className={styles.col3Item}>
                         Cardio Plus
-                    </div>
-                    <div className={styles.col3Item}>
+                    </Link>
+                    <Link to='/cardiovascular' className={styles.col3Item}>
                         Hemoglobin A1c
-                    </div>
+                    </Link>
                 </div>
             </div>
             <div className={styles.copyRightText}>
