@@ -1,10 +1,20 @@
 import React from 'react';
 
-import Carousel from 'react-elastic-carousel';
+// import Carousel from 'react-elastic-carousel';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, {
+	A11y,
+	Scrollbar,
+	Navigation,
+	Pagination,
+	EffectFade,
+	EffectCube,
+	EffectFlip,
+	EffectCoverflow,
+} from 'swiper';
 
-import { Header, Navigation, SideMenu, Footer } from '../../../components';
-
-import { BsCircleFill } from 'react-icons/bs';
+import { Header, Navigation as NavBar, SideMenu, Footer } from '../../../components';
+import { Item1, Item2, Item3 } from './swipeItems'
 
 import mapImg from '../../../assets/images/map.png';
 import card1 from '../../../assets/images/card-1.png';
@@ -22,96 +32,47 @@ import callImg2 from '../../../assets/images/call-2.png';
 import officeImg from '../../../assets/images/office.png';
 
 import styles from './index.module.scss';
+import 'swiper/swiper.scss';
+import 'swiper/components/navigation/navigation.scss';
+import 'swiper/components/pagination/pagination.scss';
+import 'swiper/components/scrollbar/scrollbar.scss';
 
-const Item1 = () => (
-	<div className={styles.carouselItem0}>
-		<h1>A Simple, No-Stress Testing Procedure</h1>
-		<ul>
-			<li>
-				<BsCircleFill className={styles.icon} />
-				<span>
-					Our New Jersey draw center have work-friendly hours and are
-					open saturday
-				</span>
-			</li>
-			<li>
-				<BsCircleFill className={styles.icon} />
-				<span>Your privacy</span>
-			</li>
-			<li>
-				<BsCircleFill className={styles.icon} />
-				<span>Most results available in 2-48 hours</span>
-			</li>
-			<li>
-				<BsCircleFill className={styles.icon} />
-				<span>Results delivered immediately to your doctor</span>
-			</li>
-		</ul>
-	</div>
-);
-
-const Item2 = () => (
-	<div className={styles.carouselItem1}>
-		<h1>Affordable Lab Tests for All Patients</h1>
-		<ul>
-			<li>
-				<BsCircleFill className={styles.icon} />
-				<span>We have competitive pricing on every test</span>
-			</li>
-			<li>
-				<BsCircleFill className={styles.icon} />
-				<span>No hidden costs or charges after your test</span>
-			</li>
-			<li>
-				<BsCircleFill className={styles.icon} />
-				<span>Medicare, Medicaid and private insurances accepted</span>
-			</li>
-			<li>
-				<BsCircleFill className={styles.icon} />
-				<span>
-					No Insurance ? No problem! We give discounts for cash
-					payments
-				</span>
-			</li>
-			<li>
-				<BsCircleFill className={styles.icon} />
-				<span>Compare our prices and save!</span>
-			</li>
-		</ul>
-	</div>
-);
-
-const Item3 = () => (
-	<div className={styles.carouselItem2}>
-		<h1>DNA - Genetic Testing</h1>
-		<ul>
-			<li>
-				<BsCircleFill className={styles.icon} />
-				<span>Predict, diagnose and prevent disease</span>
-			</li>
-			<li>
-				<BsCircleFill className={styles.icon} />
-				<span>Determine the best treatment option</span>
-			</li>
-			<li>
-				<BsCircleFill className={styles.icon} />
-				<span>Identify gene changes for future generarions</span>
-			</li>
-			<li>
-				<BsCircleFill className={styles.icon} />
-				<span>Screen newborns and at-risk patients</span>
-			</li>
-		</ul>
-	</div>
-);
+SwiperCore.use([
+	A11y,
+	Scrollbar,
+	Navigation,
+	Pagination,
+	EffectFade,
+	EffectCube,
+	EffectFlip,
+	EffectCoverflow,
+]);
 
 const Main = () => {
 	return (
 		<div className={styles.cont}>
 			<Header />
-			<Navigation current={'home'} find={true} />
+			<NavBar current={'home'} find={true} />
 			<div className={styles.caruselCont}>
-				<Carousel>
+				<Swiper
+					navigation
+					effect={'coverflow'}
+					// effect='fade fade coverflow'
+					slidesPerView={1}
+					scrollbar={{ draggable: true }}
+					pagination={{ clickable: true }}
+				>
+					<SwiperSlide>
+						<Item1 />
+					</SwiperSlide>
+					<SwiperSlide>
+						<Item2 />
+					</SwiperSlide>
+					<SwiperSlide>
+						<Item3 />
+					</SwiperSlide>
+				</Swiper>
+				{/* <Carousel>
 					{[0, 0, 0].map((item, index) => {
 						if (index === 0) {
 							return <Item1 key={index} />;
@@ -123,7 +84,7 @@ const Main = () => {
 							return <Item3 key={index} />;
 						}
 					})}
-				</Carousel>
+				</Carousel> */}
 				<div className={styles.bottomRow}>
 					<div className={styles.first}></div>
 					<div className={styles.second}></div>

@@ -116,3 +116,110 @@
         }
     }
 }
+
+@media (max-width: 990px) {
+    .header{
+        padding: 0px 6vw;
+        margin-bottom: 25px;
+        align-items: flex-end;
+
+        .left{
+            width: 155px;
+        }
+
+        .right{
+
+            .row2{
+                align-items: flex-end;
+
+                .col1{
+
+                    .iconFb{
+                        width: 25px;
+                        height: 25px;
+                    }
+    
+                    .iconTw{
+                        width: 25px;
+                        height: 25px;
+                        margin-left: 8px;
+                    }
+    
+                    .iconYt{
+                        width: 25px;
+                        height: 25px;
+                        margin-left: 8px;
+                    }
+    
+                    .iconGp{
+                        width: 25px;
+                        height: 25px;
+                        margin-left: 8px;
+                    }
+                }
+
+                .col2{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .header{
+        padding: 0px 15px;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .left{
+            max-width: 100%;
+            width: max-content;
+        }
+
+        .right{
+            padding: 0px;
+            display: flex;
+            align-self: center;
+            align-items: center;
+            flex-direction: column;
+
+            .row2{
+                margin-top: -10px;
+                flex-direction: column-reverse;
+
+                .col1{
+                    margin-top: 10px;
+                    align-self: center;
+
+                    .iconFb{
+                        width: 35px;
+                        height: 35px;
+                    }
+    
+                    .iconTw{
+                        width: 35px;
+                        height: 35px;
+                        margin-left: 10px;
+                    }
+    
+                    .iconYt{
+                        width: 35px;
+                        height: 35px;
+                        margin-left: 10px;
+                    }
+    
+                    .iconGp{
+                        width: 35px;
+                        height: 35px;
+                        margin-left: 10px;
+                    }
+                }
+
+                .col2{
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+}
