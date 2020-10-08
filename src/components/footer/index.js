@@ -15,25 +15,25 @@ const Footer = ({ current }) => {
             <div className={styles.row}>
                 <div className={styles.col1}>
                     <img src={logo} alt="img"/>
-                    <div className={styles.col1Row}>
+                    <div className={styles.col1Row1}>
                         <MdLocationOn className={styles.icon} />
                         <div className={styles.col1Text}>
                             1026 West Elizabeth Avenue, Unit D 4& 5 Linden NJ 07036
                         </div>
                     </div>
-                    <div className={styles.col1Row}>
+                    <div className={styles.col1Row2}>
                         <MdPhone className={styles.icon} />
                         <div className={styles.col1Text}>
                             (201) 636-2705
                         </div>
                     </div>
-                    <div className={styles.col1Row}>
+                    <div className={styles.col1Row3}>
                         <FaFax className={styles.icon} />
                         <div className={styles.col1Text}>
                             (201) 636-2708 (Fax)
                         </div>
                     </div>
-                    <div className={styles.col1Row}>
+                    <div className={styles.col1Row4}>
                         <FaEnvelope className={styles.icon} />
                         <div className={styles.col1Text}>
                             customerservice@platinumdiagnosticlab.com

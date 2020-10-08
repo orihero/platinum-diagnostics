@@ -10,20 +10,29 @@
         .col1{
             width: 20%;
 
-            .col1Row{
+            .col1Row1, .col1Row2, .col1Row3, .col1Row4{
                 display: flex;
                 margin-top: 25px;
                 align-items: center;
 
                 .icon{
-                    width: 20px;
-                    height: 20px;
+                    min-width: 20px;
+                    min-height: 20px;
                     color: #FF9000;
                 }
 
                 .col1Text{
+                    max-width: 95%;
                     font-size: 12px;
                     margin-left: 15px;
+                }
+            }
+
+            .col1Row3{
+
+                .icon{
+                    width: 15px;
+                    height: 15px;
                 }
             }
         }
@@ -89,5 +98,42 @@
 
     .current{
         color: #fff !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .footerCont{
+
+        .row{
+            padding-left: 5vw;
+            justify-content: flex-start;
+
+            .col2{
+                margin-left: 20vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .footerCont{
+
+        .row{
+            flex-direction: column;
+            padding-left: 5vw;
+
+            .col1{
+                width: 100%;
+                overflow-x: auto;
+            }
+
+            .col2{
+                margin-left: 0px;
+            }
+
+            .col3{
+                margin-left: 0px;
+            }
+        }
     }
 }

@@ -3,18 +3,16 @@
 
     .caruselCont{
         background-color: #fff;
-        // color: #fff;
-        // background-color: #647275;
 
         .carouselItem0{
             width: 100%;
             height: 450px;
-            background-image: url('../../../assets/images/lab1.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding-top: 130px;
+            padding-top: 5vw;
             padding-left: 100px;
+            background-size: cover;
+            background-repeat: no-repeat;
             background-position: center center;
+            background-image: url('../../../assets/images/lab1.jpg');
 
             h1{
                 margin: 0;
@@ -51,12 +49,12 @@
         .carouselItem1{
             width: 100%;
             height: 450px;
-            background-image: url('../../../assets/images/lab2.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding-top: 130px;
+            padding-top: 5vw;
             padding-left: 100px;
+            background-size: cover;
+            background-repeat: no-repeat;
             background-position: center center;
+            background-image: url('../../../assets/images/lab2.jpg');
 
             h1{
                 margin: 0;
@@ -93,12 +91,12 @@
         .carouselItem2{
             width: 100%;
             height: 450px;
-            background-image: url('../../../assets/images/lab3.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding-top: 130px;
+            padding-top: 5vw;
             padding-left: 100px;
+            background-size: cover;
+            background-repeat: no-repeat;
             background-position: center center;
+            background-image: url('../../../assets/images/lab3.jpg');
 
             h1{
                 margin: 0;
@@ -134,35 +132,34 @@
 
         .bottomRow{
             display: flex;
-            background-color: pink;
 
             .first{
                 width: 20%;
-                height: 10px;
+                height: 0.5vw;
                 background-color: #466C86;
             }
 
             .second{
                 width: 20%;
-                height: 10px;
+                height: 0.5vw;
                 background-color: #66CC33;
             }
 
             .third{
                 width: 20%;
-                height: 10px;
+                height: 0.5vw;
                 background-color: #F05927;
             }
 
             .fourth{
                 width: 20%;
-                height: 10px;
+                height: 0.5vw;
                 background-color: #2299B7;
             }
 
             .fiveth{
                 width: 20%;
-                height: 10px;
+                height: 0.5vw;
                 background-color: #FF9000;
             }
         }
@@ -170,40 +167,13 @@
 
     .rowContent{
         display: flex;
-        position: relative;
-        z-index: -2;
-
-        .boxArrow1{
-            z-index: 5;
-            top: -10px;
-            left: 250px;
-            width: 200px;
-            height: 200px;
-            display: block;
-            position: absolute;
-            background-color: #D1EDF1;
-            transform: rotate(55deg) skew(20deg);
-        }
-
-        .boxArrow2{
-            top: -10px;
-            z-index: 3;
-            right: 500px;
-            width: 200px;
-            height: 200px;
-            display: block;
-            position: absolute;
-            background-color: #D1EDF1;
-            transform: rotate(55deg) skew(20deg);
-        }
 
         .box1{
             width: 30%;
-            z-index: 6;
             display: flex;
             padding: 40px 0;
+            padding-left: 7vw;
             padding-right: 15px;
-            padding-left: 105px;
             align-items: center;
             box-sizing: border-box;
             background: linear-gradient(to right, rgba(239,248,250,1) 0%,rgba(212,237,242,1) 100%);
@@ -211,9 +181,9 @@
 
         .box2{
             width: 30%;
-            z-index: 4;
             display: flex;
             padding: 40px 0px;
+            position: relative;
             padding-left: 90px;
             align-items: center;
             box-sizing: border-box;
@@ -225,10 +195,14 @@
             display: flex;
             padding: 40px 0px;
             padding-left: 70px;
-            padding-right: 250px;
+            position: relative;
             align-items: center;
             box-sizing: border-box;
             background: linear-gradient(to right, rgba(239,248,250,1) 0%,rgba(212,237,242,1) 100%);
+
+            .text{
+                max-width: 130px;
+            }
         }
 
         .text{
@@ -241,12 +215,22 @@
             border-radius: 50%;
             object-fit: contain;
         }
+
+        span{
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 55px;
+            position: absolute;
+            background-image: url('../../../assets/images/arrow.jpg');
+            background-repeat: no-repeat;
+        }
     }
 
     .rowCatalog{
-        padding: 30px 65px 0px 65px;
         display: flex;
         background-color: #fff;
+        padding: 30px 5vw 0px 5vw;
 
         .main{
             width: 75%;
@@ -271,14 +255,18 @@
             }
 
             .content{
-                padding-top: 75px;
-                padding-bottom: 55px;
+                padding-top: 5vw;
+                padding-bottom: 3.5vw;
+                // padding-top: 75px;
+                // padding-bottom: 55px
 
                 .row{
-                    display: flex;
-                    justify-content: space-between;
+                    display: grid;
+                    grid-gap: 20px;
+                    grid-template-columns: repeat(4, 1fr);
 
-                    .card{
+                    .card1, .card2, .card3, .card4,
+                    .card5, .card6, .card7, .card8{
                         border: 1px solid #eee;
                         background-color: #f9f9f9;
                         border-bottom-left-radius: 10px;
@@ -287,7 +275,7 @@
                         .text1{
                             font-size: 18px;
                             font-weight: 700;
-                            margin-top: 15px;
+                            margin-top: 1vw;
                             text-align: center;
                         }
 
@@ -296,12 +284,43 @@
                             margin-top: 5px;
                             color: #43a8c1;
                             text-align: center;
-                            margin-bottom: 30px;
+                            margin-bottom: 1.5vw;
                         }
 
                         img{
-                            height: 105px;
+                            width: 100%;
+                            height: 8vw;
                         }
+                    }
+
+                    .card1, .card2, .card3, .card4{
+                        grid-row-start: 1;
+                        grid-row-end: 2;
+                    }
+
+                    .card5, .card6, .card7, .card8{
+                        grid-row-start: 2;
+                        grid-row-end: 3;
+                    }
+
+                    .card1, .card5{
+                        grid-column-start: 1;
+                        grid-column-end: 2;
+                    }
+
+                    .card2, .card6{
+                        grid-column-start: 2;
+                        grid-column-end: 3;
+                    }
+
+                    .card3, .card7{
+                        grid-column-start: 3;
+                        grid-column-end: 4;
+                    }
+
+                    .card4, .card8{
+                        grid-column-start: 4;
+                        grid-column-end: 5;
                     }
                 }
             }
@@ -328,20 +347,324 @@
         
             .callBox{
                 display: flex;
-                padding: 15px 70px;
+                padding: 15px 3vw;
                 align-items: center;
                 margin: 15px 10px 55px 10px;
                 border: 1px solid #6ac2cf;
                 background-color: #f9f9f9;
                 justify-content: space-between;
 
-                .text1{
-                    font-size: 24px;
+                .midBox{
+                    font-size: 1.3em;
+                    text-align: center;
+
+                    b{
+                        margin-left: 2vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .cont{
+
+        .rowCatalog{
+
+
+            .main{
+
+
+                .content{
+
+
+                    .row{
+
+
+                        .card1, .card2, .card3, .card4,
+                        .card5, .card6, .card7, .card8{
+
+                            .text1{
+                                font-size: 0.9em;
+                                margin-top: 0.9vw;
+                            }
+
+                            .text2{
+                                font-size: 10px;
+                                margin-bottom: 1.5vw;
+                            }
+
+                            img{
+                                height: 7vw;
+                            }
+                        }
+                    }
                 }
 
-                .text2{
-                    font-size: 24px;
-                    font-weight: bold;
+                .infoBox{
+
+                }
+
+                .callBox{
+
+                    .midBox{
+                        font-size: 1.1em;
+                    }
+
+                    img{
+                        width: 4.5vw;
+                        height: 4.5vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .cont{
+
+        .caruselCont {           
+
+            .carouselItem0, .carouselItem1, .carouselItem2{
+                padding-left: 7vw;
+
+                h1{
+                    font-size: 1.3em;
+                }
+
+                ul{
+
+                    li{
+
+                        .icon{
+                            width: 6px;
+                            height: 6px;
+                        }
+
+                        span{
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
+        }
+
+        .rowContent {
+
+
+            .box1{
+                width: 37%;
+                flex-direction: column;
+                padding: 30px 0px 30px 7.5vw;
+
+                .text{
+                    max-width: 170px;
+                }
+            }
+
+            .box2{
+                width: 26%;
+                padding: 30px 0px;
+                flex-direction: column;
+            }
+
+            .box3{
+                width: 37%;
+                flex-direction: column;
+                padding: 30px 7.5vw 30px 0px;
+            }
+
+            .text{
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            span{
+                display: none;
+            }
+        }
+
+        .rowCatalog{
+
+
+            .main{
+
+
+                .content{
+
+
+                    .row{
+                        grid-template-columns: repeat(2, 1fr);
+
+                        .card1, .card2, .card3, .card4,
+                        .card5, .card6, .card7, .card8{
+
+                            .text1{
+                                font-size: 1.2em;
+                                margin-top: 1.2vw;
+                            }
+
+                            .text2{
+                                font-size: 0.9em;
+                                margin-bottom: 2vw;
+                            }
+
+                            img{
+                                height: 12vw;
+                            }
+                        }
+
+                        .card1, .card3, .card5, .card7{
+                            grid-column-start: 1;
+                            grid-column-end: 2;
+                        }
+
+                        .card2, .card4, .card6, .card8{
+                            grid-column-start: 2;
+                            grid-column-end: 3;
+                        }
+
+                        .card1, .card2{
+                            grid-row-start: 1;
+                            grid-row-end: 2;
+                        }
+                        
+                        .card3, .card4{
+                            grid-row-start: 2;
+                            grid-row-end: 3;
+                        }
+
+                        .card5, .card6{
+                            grid-row-start: 3;
+                            grid-row-end: 4;
+                        }
+
+                        .card7, .card8{
+                            grid-row-start: 4;
+                            grid-row-end: 5;
+                        }
+                    }
+                }
+
+                .infoBox{
+
+                }
+
+                .callBox{
+
+                    .midBox{
+                        font-size: 0.85em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .cont {
+
+        .caruselCont {
+
+            .carouselItem0, .carouselItem1, .carouselItem2{
+                padding-left: 7vw;
+
+                h1{
+                    font-size: 1.1em;
+                }
+
+                ul{
+
+                    li{
+
+                        .icon{
+                            width: 4px;
+                            height: 4px;
+                        }
+
+                        span{
+                            width: 97%;
+                            font-size: 0.9em;
+                        }
+                    }
+                }
+            }
+        }
+
+        .rowContent {
+            flex-direction: column;
+
+            .box1 {
+                width: 100%;
+                padding: 25px 0px;
+                background: linear-gradient(to bottom, rgba(239,248,250,1) 0%,rgba(212,237,242,1) 100%);
+            }
+
+            .box2 {
+                width: 100%;
+                padding: 25px 0px;
+                background: linear-gradient(to bottom, rgba(239,248,250,1) 0%,rgba(212,237,242,1) 100%);
+            }
+
+            .box3 {
+                width: 100%;
+                padding: 25px 0px;
+                background: linear-gradient(to bottom, rgba(239,248,250,1) 0%,rgba(212,237,242,1) 100%);
+            }
+        }
+
+        .rowCatalog{
+            flex-direction: column;
+            padding: 0px 15px;
+            padding-top: 30px;
+
+            .main{
+                margin: 0px;
+                width: 100%;
+                margin-top: 70px;
+
+                .content{
+
+
+                    .row{
+                        grid-template-columns: 1fr;
+
+                        .card1, .card2, .card3, .card4,
+                        .card5, .card6, .card7, .card8{
+                            grid-column-start: 1;
+                            grid-column-end: 2;
+
+                            img{
+                                height: auto;
+                                // height: 20vw;
+                            }
+                        }
+
+                        .card1 { grid-row-start: 1; grid-row-end: 2; }
+                        .card2 { grid-row-start: 2; grid-row-end: 3; }
+                        .card3 { grid-row-start: 3; grid-row-end: 4; }
+                        .card4 { grid-row-start: 4; grid-row-end: 5; }
+                        .card5 { grid-row-start: 5; grid-row-end: 6; }
+                        .card6 { grid-row-start: 6; grid-row-end: 7; }
+                        .card7 { grid-row-start: 7; grid-row-end: 8; }
+                        .card8 { grid-row-start: 8; grid-row-end: 9; }
+                    }
+                }
+
+                .callBox{
+                    flex-direction: column;
+
+                    .midBox{
+                        margin: 2vw 0px;
+                        font-size: 1.2em;
+                    }
+
+                    img{
+                        width: 50px;
+                        height: 50px;
+                    }
                 }
             }
         }

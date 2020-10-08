@@ -57,7 +57,6 @@ const Main = () => {
 				<Swiper
 					navigation
 					effect={'coverflow'}
-					// effect='fade fade coverflow'
 					slidesPerView={1}
 					scrollbar={{ draggable: true }}
 					pagination={{ clickable: true }}
@@ -72,19 +71,6 @@ const Main = () => {
 						<Item3 />
 					</SwiperSlide>
 				</Swiper>
-				{/* <Carousel>
-					{[0, 0, 0].map((item, index) => {
-						if (index === 0) {
-							return <Item1 key={index} />;
-						}
-						if (index === 1) {
-							return <Item2 key={index} />;
-						}
-						if (index === 2) {
-							return <Item3 key={index} />;
-						}
-					})}
-				</Carousel> */}
 				<div className={styles.bottomRow}>
 					<div className={styles.first}></div>
 					<div className={styles.second}></div>
@@ -103,15 +89,15 @@ const Main = () => {
 				<div className={styles.box2}>
 					<img src={officeImg} alt='img' />
 					<div className={styles.text}>{'Order Testing'}</div>
+					<span />
 				</div>
 				<div className={styles.box3}>
 					<img src={listImg} alt='img' />
 					<div className={styles.text}>
 						{'Get test results in 24-48 Hours'}
 					</div>
+					<span />
 				</div>
-				{/* <div className={styles.boxArrow1} /> */}
-				{/* <div className={styles.boxArrow2} /> */}
 			</div>
 			<div className={styles.rowCatalog}>
 				<SideMenu />
@@ -129,32 +115,56 @@ const Main = () => {
 					</p>
 					<div className={styles.content}>
 						<div className={styles.row}>
-							<div className={styles.card}>
+							<div className={styles.card1}>
 								<img src={card1} alt='img' />
 								<div className={styles.text1}>Allergy</div>
 								<div className={styles.text2}>Details</div>
 							</div>
-							<div className={styles.card}>
+							<div className={styles.card2}>
 								<img src={card2} alt='img' />
 								<div className={styles.text1}>
 									Infectious Diseases
 								</div>
 								<div className={styles.text2}>Details</div>
 							</div>
-							<div className={styles.card}>
+							<div className={styles.card3}>
 								<img src={card3} alt='img' />
 								<div className={styles.text1}>Diabetes</div>
 								<div className={styles.text2}>Details</div>
 							</div>
-							<div className={styles.card}>
+							<div className={styles.card4}>
 								<img src={card4} alt='img' />
 								<div className={styles.text1}>
 									General Health
 								</div>
 								<div className={styles.text2}>Details</div>
 							</div>
+							<div className={styles.card5}>
+								<img src={card5} alt='img' />
+								<div className={styles.text1}>
+									Pain Management
+								</div>
+								<div className={styles.text2}>Details</div>
+							</div>
+							<div className={styles.card6}>
+								<img src={card6} alt='img' />
+								<div className={styles.text1}>Pediatrics</div>
+								<div className={styles.text2}>Details</div>
+							</div>
+							<div className={styles.card7}>
+								<img src={card7} alt='img' />
+								<div className={styles.text1}>Oncology</div>
+								<div className={styles.text2}>Details</div>
+							</div>
+							<div className={styles.card8}>
+								<img src={card8} alt='img' />
+								<div className={styles.text1}>
+									Cardiovascular
+								</div>
+								<div className={styles.text2}>Details</div>
+							</div>
 						</div>
-						<div
+						{/* <div
 							className={styles.row}
 							style={{ marginTop: '20px' }}>
 							<div className={styles.card}>
@@ -181,7 +191,7 @@ const Main = () => {
 								</div>
 								<div className={styles.text2}>Details</div>
 							</div>
-						</div>
+						</div> */}
 					</div>
 					<div className={styles.infoBox}>
 						<h3>Platinum Diagnostic Lab Location in New Jersey</h3>
@@ -211,10 +221,14 @@ const Main = () => {
 					</div>
 					<div className={styles.callBox}>
 						<img src={callImg1} alt='img' />
-						<div className={styles.text1}>
+						<div className={styles.midBox}>
 							Have a questions or need assistance?
+							<b>Call (201) 636-2705</b>
+							{/* <div className={styles.text1}>
+								Have a questions or need assistance?
+							</div> */}
+							{/* <div className={styles.text2}>Call (201) 636-2705</div> */}
 						</div>
-						<div className={styles.text2}>Call (201) 636-2705</div>
 						<img src={callImg2} alt='img' />
 					</div>
 				</div>
