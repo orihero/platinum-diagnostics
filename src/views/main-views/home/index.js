@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom'
+
 // import Carousel from 'react-elastic-carousel';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {
@@ -118,50 +120,90 @@ const Main = () => {
 							<div className={styles.card1}>
 								<img src={card1} alt='img' />
 								<div className={styles.text1}>Allergy</div>
-								<div className={styles.text2}>Details</div>
+								<Link
+									to='/allergy'
+									className={styles.text2}
+								>
+									Details
+								</Link>
 							</div>
 							<div className={styles.card2}>
 								<img src={card2} alt='img' />
 								<div className={styles.text1}>
 									Infectious Diseases
 								</div>
-								<div className={styles.text2}>Details</div>
+								<Link
+									to='/infectioues-deseases'
+									className={styles.text2}
+								>
+									Details
+								</Link>
 							</div>
 							<div className={styles.card3}>
 								<img src={card3} alt='img' />
 								<div className={styles.text1}>Diabetes</div>
-								<div className={styles.text2}>Details</div>
+								<Link
+									to='/diabets'
+									className={styles.text2}
+								>
+									Details
+								</Link>
 							</div>
 							<div className={styles.card4}>
 								<img src={card4} alt='img' />
 								<div className={styles.text1}>
 									General Health
 								</div>
-								<div className={styles.text2}>Details</div>
+								<Link
+									to='/general-health'
+									className={styles.text2}
+								>
+									Details
+								</Link>
 							</div>
 							<div className={styles.card5}>
 								<img src={card5} alt='img' />
 								<div className={styles.text1}>
 									Pain Management
 								</div>
-								<div className={styles.text2}>Details</div>
+								<Link
+									to='/pain-management'
+									className={styles.text2}
+								>
+									Details
+								</Link>
 							</div>
 							<div className={styles.card6}>
 								<img src={card6} alt='img' />
 								<div className={styles.text1}>Pediatrics</div>
-								<div className={styles.text2}>Details</div>
+								<Link
+									to='/pediatrics'
+									className={styles.text2}
+								>
+									Details
+								</Link>
 							</div>
 							<div className={styles.card7}>
 								<img src={card7} alt='img' />
 								<div className={styles.text1}>Oncology</div>
-								<div className={styles.text2}>Details</div>
+								<Link
+									to='/oncology'
+									className={styles.text2}
+								>
+									Details
+								</Link>
 							</div>
 							<div className={styles.card8}>
 								<img src={card8} alt='img' />
 								<div className={styles.text1}>
 									Cardiovascular
 								</div>
-								<div className={styles.text2}>Details</div>
+								<Link
+									to='/cardiovascular'
+									className={styles.text2}
+								>
+									Details
+								</Link>
 							</div>
 						</div>
 						{/* <div
