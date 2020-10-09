@@ -2,18 +2,49 @@
     padding-top: 30px;
 
     .content{
-        padding: 30px 65px 0px 65px;
         display: flex;
         background-color: #fff;
+        padding: 30px 5vw 0px 5vw;
 
         .main{
-            width: 50%;
+            // width: 50%;
+            max-width: 600px;
             margin-left: 25px;
             margin-right: 30px;
             padding-bottom: 50px;
 
             p{
                 text-align: justify;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .cont {
+
+        .content{
+
+            .main{
+                margin-right: 0;
+                width: 66vw;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .cont {
+
+        .content{
+            flex-direction: column;
+
+            .main{
+                width: 100%;
+                margin-left: 0;
+                max-width: none;
+                padding-top: 2em;
             }
         }
     }

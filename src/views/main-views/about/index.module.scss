@@ -2,14 +2,13 @@
     padding-top: 30px;
 
     .content{
-        padding: 30px 65px 0px 65px;
         display: flex;
         background-color: #fff;
+        padding: 30px 5vw 50px 5vw;
 
         .main{
-            width: 50%;
+            max-width: 600px;
             margin-left: 25px;
-            padding-bottom: 50px;
 
             .header{
 
@@ -165,6 +164,102 @@
                             color: #555;
                             font-size: 14px;
                             line-height: 150%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .cont {
+
+        .content{
+
+            .main{
+                width: 66vw;
+
+                .box3{
+
+                    .headerRow{
+                        flex-direction: column-reverse;
+
+                        .boldText{
+                            margin-top: 1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .cont {
+
+        .content{
+            flex-direction: column;
+
+            .main{
+                margin-left: 0;
+                max-width: none;
+                width: 100%;
+                padding-top: 2em;
+
+                .box3{
+
+                    .headerRow{
+                        flex-direction: row;
+
+                        .boldText{
+                            margin-top: 0;
+                        }
+                    }
+
+                    ul{
+
+                        li{
+
+                            .iconn{
+                                margin-top: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .cont {
+
+        .content{
+            
+            .main{
+
+                .header{
+
+                    img{
+                        width: 100%;
+                        margin-left: 0px;
+                    }
+                }
+
+                .box3{
+
+                    .headerRow{
+                        flex-direction: column-reverse;
+                    }
+
+                    ul{
+
+                        li{
+
+                            .liText{
+                                margin-left: 15px;
+                            }
                         }
                     }
                 }

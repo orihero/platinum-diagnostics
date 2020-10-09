@@ -2,15 +2,13 @@
     padding-top: 30px;
 
     .content{
-        padding: 30px 65px 0px 65px;
         display: flex;
         background-color: #fff;
+        padding: 30px 5vw 50px 5vw;
 
         .main{
-            width: 50%;
+            width: 600px;
             margin-left: 25px;
-            margin-right: 30px;
-            padding-bottom: 50px;
 
             h1{
                 color: #000;
@@ -26,6 +24,7 @@
                 padding-top: 35px;
 
                 .col{
+                    margin-left: 20px;
 
                     .box{
                         margin-top: 15px;
@@ -85,6 +84,38 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .cont {
+
+        .content{
+
+            .main{
+                width: 66vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .cont {
+
+        .content{
+            flex-direction: column;
+
+            .main{
+                margin-left: 0;
+                max-width: none;
+                width: 100%;
+                padding-top: 2em;
+
+                .flexBox{
+                    flex-direction: column;
                 }
             }
         }

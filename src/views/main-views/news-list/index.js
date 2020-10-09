@@ -41,11 +41,12 @@ const NewsList = () => {
                 <SideMenu />
                 <div className={styles.main}>
                     {items.map((item, index) => (
-                        <div key={index} className={styles.newsCont}>
-                            <Link
-                                to='/news'
-                                className={styles.newsTitle}
-                            >
+                        <div
+                            key={index}
+                            className={styles.newsCont}
+                            style={index !== 0 ? {marginTop: '2em'} : null}
+                        >
+                            <Link to='/news' className={styles.newsTitle}>
                                 {item.title}
                             </Link>
                             <div className={styles.newsInfo}>

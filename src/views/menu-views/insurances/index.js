@@ -59,7 +59,7 @@ const Insurances = () => {
                         </div>
                         <div
                             className={styles.col}
-                            style={{marginLeft: '20px'}}
+                            // style={{marginLeft: '20px'}}
                         >
                             {arr2.map((item, index) => (
                                 <div key={index} className={styles.box}>

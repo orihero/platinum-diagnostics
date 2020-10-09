@@ -2,9 +2,9 @@
     padding-top: 30px;
 
     .content{
-        padding: 30px 65px 0px 65px;
         display: flex;
         background-color: #fff;
+        padding: 30px 5vw 0px 5vw;
 
         .main{
             width: 50%;
@@ -115,9 +115,61 @@
 
                         span{
                             color: #555;
+                            width: 97%;
                             font-size: 14px;
                             line-height: 150%;
                             margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .cont {
+
+        .content{
+
+            .main{
+                width: 66vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .cont {
+
+        .content{
+            flex-direction: column;
+
+            .main{
+                width: 100%;
+                margin-left: 0;
+                padding-top: 2em;
+
+                .categories{
+
+                    .flexBox{
+                        flex-direction: column;
+
+                        .col2{
+                            margin-left: 20px;
+                        }
+                    }
+                }
+
+                .listTest{
+
+                    ul{
+
+                        li{
+
+                            span{
+                                margin-left: 20px;
+                            }
                         }
                     }
                 }
