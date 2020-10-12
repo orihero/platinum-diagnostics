@@ -37,14 +37,17 @@ const Header = () => {
                         <FaYoutube className={styles.iconYt}/>
                         <FaGooglePlus className={styles.iconGp}/>
                     </div>
-                    <div className={styles.col2}>
+                    <a
+                        className={styles.col2}
+                        href='https://platinum.safemedicaldata.com'
+                    >
                         <div className={styles.coll1}>
                             <FaUserCircle className={styles.icon} />
                         </div>
                         <div className={styles.coll2}>
                             Physician Portal
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>

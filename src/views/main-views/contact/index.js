@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import {
     Header,
@@ -8,9 +8,77 @@ import {
     Footer,
 } from '../../../components'
 
+import {send} from 'emailjs-com'
+
 import styles from './index.module.scss'
 
+const service_id = 'service_6o731e3'
+const template_id = 'template_d3n2mon'
+
 const Contact = () => {
+    const [state, setState] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+    })
+    const [errState, setErrState] = useState({
+        name: false,
+        email: false,
+        subject: false,
+        message: false
+    })
+
+    const onSubmit = e => {
+        e.preventDefault()
+
+        const {
+            name,
+            email,
+            subject,
+            message
+        } = state
+
+        if(name && email && subject && message) {
+            setErrState({
+                name: false,
+                email: false,
+                subject: false,
+                message: false
+            })
+
+            const templateParams = {
+                from_name: name,
+                from_email: email,
+                subject,
+                message
+            }
+
+            send(service_id, template_id, templateParams)
+                .then(res => {
+                    console.log('res: ', res)
+                    if(res.status === 200){
+                        window.location.reload()
+                    }
+                })
+        } else {
+            let tmpErrState = {
+                name: false,
+                email: false,
+                subject: false,
+                message: false
+            }
+
+            if (!name) tmpErrState.name = true
+            if (!email) tmpErrState.email = true
+            if (!subject) tmpErrState.subject = true
+            if (!message) tmpErrState.message = true
+
+            setErrState({...tmpErrState})
+
+            alert('Please fill all fields')
+        }
+    }
 
     return(
         <div className={styles.cont}>
@@ -39,15 +107,45 @@ const Contact = () => {
                         </h3>
                         <div className={styles.item}>
                             <label htmlFor="name">Name</label>
-                            <input type="text" id="name"/>
+                            <input
+                                id="name"
+                                type="text"
+                                value={state.name}
+                                onChange={e => setState({...state, name: e.target.value})}
+                            />
+                            {errState.name ? (
+                                <div className={styles.errorText}>
+                                    Required
+                                </div>
+                            ) : null}
                         </div>
                         <div className={styles.item}>
                             <label htmlFor="email">Email</label>
-                            <input type="email" id="email"/>
+                            <input
+                                id="email"
+                                type="email"
+                                value={state.email}
+                                onChange={e => setState({...state, email: e.target.value})}
+                            />
+                            {errState.email ? (
+                                <div className={styles.errorText}>
+                                    Required
+                                </div>
+                            ) : null}
                         </div>
                         <div className={styles.item}>
                             <label htmlFor="subject">Subject</label>
-                            <input type="text" id="subject"/>
+                            <input
+                                type="text"
+                                id="subject"
+                                value={state.subject}
+                                onChange={e => setState({...state, subject: e.target.value})}
+                            />
+                            {errState.subject ? (
+                                <div className={styles.errorText}>
+                                    Required
+                                </div>
+                            ) : null}
                         </div>
                         <div className={styles.item}>
                             <label htmlFor="message">Message</label>
@@ -55,10 +153,17 @@ const Contact = () => {
                                 cols="30"
                                 rows="10"
                                 id="message"
+                                value={state.message}
                                 className={styles.textArea}
+                                onChange={e => setState({...state, message: e.target.value})}
                             />
+                            {errState.message ? (
+                                <div className={styles.errorText}>
+                                    Required
+                                </div>
+                            ) : null}
                         </div>
-                        <button>
+                        <button onClick={onSubmit}>
                             Send
                         </button>
                     </div>
